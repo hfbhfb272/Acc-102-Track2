@@ -2,7 +2,7 @@
 ## Question and Audience:
 This project analyzes the long-term financial performance trend of Guizhou Moutai (stock code: 600519) from 2001 to the present, covering solvency, profitability, asset size and revenue growth. It provides reference materials for investment analysts, business managers and course evaluators regarding the company's operating conditions and investment value.
 ## data（source+access data+key fields):
-### Data Source: WRDS platform CSMAR financial database (https://wrds-www.wharton.upenn.edu/)### Data Acquisition Date: April 20, 2026Key Fields: Stock Code, Accounting Period, Reporting Type, Total Assets, Total Liabilities, Owner's Equity, Operating Revenue, Net Profit, etc.Filter Conditions: Stock Code is 600519, Annual Report, Accounting Period starts from January 1, 2001
+### Data Source: WRDS platform CSMAR financial database (https://wrds-www.wharton.upenn.edu/) Data Acquisition Date: April 20, 2026Key Fields: Stock Code, Accounting Period, Reporting Type, Total Assets, Total Liabilities, Owner's Equity, Operating Revenue, Net Profit, etc.Filter Conditions: Stock Code is 600519, Annual Report, Accounting Period starts from January 1, 2001
 ## Methods(main python steps):
 1. Connect to the WRDS remote database using the wrds library and extract historical financial data of Moutai using SQL statements.2. Use pandas to perform data cleaning and handle missing values, and calculate core financial indicators such as asset-liability ratio, ROA, ROE, and revenue growth rate.3. Use matplotlib to draw a 2×2 multi-subplot visualization to visually present the long-term trends of each financial indicator.4. Export the cleaned data as a CSV file and save the generated charts in the figures folder.
 ## Key Findings:
